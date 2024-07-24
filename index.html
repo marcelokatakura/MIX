@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home • Mix</title>
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="source/css/videostyle.css">
+    <link rel="icon" href="source/img/Icons/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="source/css/teste.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-header">
+
+            <nav id="menu">
+                <a id="logo" href="index.html" style="text-decoration: none;">M I X</a>
+
+                <div id="container-middle-menu">
+
+                    <ul id="minus" style="list-style-type: none;">
+                        <li class="pulle"><a class="link-menu" href="teste.html">Início</a></li>
+                        <li class="pulle"><a class="link-menu" href="#">Séries</a></li>
+                        <li class="pulle"><a class="link-menu" href="#">Filmes</a></li>
+                        <li class="pulle"><a class="link-menu" href="https://play.max.com"><img
+                                    src="source/img/Icons/f2fde30cf1b2.png"
+                                    style="margin-top: -5px; position:relative;"></a>
+                        </li>
+                        <li class="pulle"><a class="link-menu" href="#">Crianças & Família</a></li>
+                    </ul>
+
+                </div>
+
+                <div id="left-menu">
+                    <ul id="minus" style="list-style-type: none;">
+                        <li><a class="pulle" href="#"><img loading="eager" alt=""
+                                    src="https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2F142d5e2b-0c8d-4886-8617-f9f58acfb4b8.png"
+                                    srcset="https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=24&amp;f=webp 24w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=30&amp;f=webp 30w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=32&amp;f=webp 32w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=48&amp;f=webp 48w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=60&amp;f=webp 60w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=64&amp;f=webp 64w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=72&amp;f=webp 72w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=90&amp;f=webp 90w,https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=96&amp;f=webp 96w"
+                                    sizes="24px"
+                                    class="StyledImage-Beam-Web-Ent__sc-18mn12h-0 dHLuhz StyledMenuBarItemImage-Beam-Web-Ent__sc-6h4g8s-0 cUyxmD image-loaded"></a>
+                        </li>
+                        <li><a class="pulle" href="#"><img src="source/img/Icons/favorite.png"></a></li>
+                        <li><a class="pulle" href="#"><img src="source/img/Icons/icon.png"
+                                    style="top: -5px; position: relative;"></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="video-container"> <!-- Adicionar video-->
+        <div id="video-panel">
+            <video id="video" class="playing" src="source/video/video1.mp4" type="video/mp4" muted autoplay></video>
+            <video id="video" src="source/video/video2.mp4" type="video/mp4" muted></video>
+            <video id="video" src="source/video/video3.mp4" type="video/mp4" muted></video>
+            <video id="video" src="source/video/video4.mp4" type="video/mp4" muted></video>
+            <video id="video" src="source/video/video5.mp4" type="video/mp4" muted></video>
+            <video id="video" src="source/video/video6.mp4" type="video/mp4" muted></video>
+        </div>
+
+        <div id="controls" class="controls">
+            <button id="prev" class="btn" onclick="prevVideo()" style="display: none;"> <i id=icon
+                    class="fas fa-chevron-left"></i></button>
+            <button id="next" class="btn" onclick="nextVideo()"> <i id=icon class="fas fa-chevron-right"></i></button>
+        </div>
+
+
+        <div class="overlay"></div>
+        <div class="dots">
+        </div>
+    </section>
+
+
+
+    <div>
+        <div>
+            <h1 id="recomend-mix">MIX para você</h1>
+        </div>
+    </div>
+
+    <div id="shadow"></div>
+
+    <div class="carousel-container">
+
+        <div class="carousel-slide">
+            <img id="img1" src="source/img/Carousel/cwb.jpg" class="pulle" alt="image 1">
+            <img id="img1" src="source/img/Carousel/aegg.jpeg" class="pulle" alt="image 2">
+            <img id="img1" src="source/img/Carousel/fc.jpg" class="pulle" alt="image 3">
+            <img id="img1" src="source/img/Carousel/itc.jpg" class="pulle" alt="image 4">
+            <img id="img1" src="source/img/Carousel/iwteyp.jpg" class="pulle" alt="image 5">
+            <img id="img1" src="source/img/Carousel/jjk.webp" class="pulle" alt="image 6">
+            <img id="img1" src="source/img/Carousel/dms.jpg" alt="image 7">
+        </div>
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+    </div>
+
+    <div style="height: 5%;">
+
+        <h1 id="recomend-mix" style="margin-top: 1%;">Filmes</h1>
+
+    </div>
+
+    <div class="carousel-container1">
+
+        <div class="carousel-slide1">
+            <img src="source/img/Carousel/aegg.jpeg" class="pulle" alt="image 7">
+            <img src="source/img/Carousel/jjk.webp" class="pulle" alt="image 8">
+            <img src="source/img/Carousel/dms.jpg" class="pulle" alt="image 9">
+            <img src="source/img/Carousel/fc.jpg" class="pulle" alt="image 10">
+            <img src="source/img/Carousel/cwb.jpg" class="pulle" alt="image 11">
+            <img src="source/img/Carousel/iwteyp.jpg" class="pulle" alt="image 12">
+            <img src="source/img/Carousel/itc.jpg" alt="image 7">
+        </div>
+        <button class="prev-btn1" onclick="moveSlide1(-1)">&#10094;</button>
+        <button class="next-btn1" onclick="moveSlide1(1)">&#10095;</button>
+
+    </div>
+
+    <div style="height: 5%;">
+
+        <h1 id="recomend-mix" style="margin-top: 1%;">Filmes</h1>
+
+    </div>
+
+
+    <script src="source/script/videopainelskip.js"></script>
+    <script>
+        let started;
+        document.querySelectorAll('#video').forEach(() => {
+            let dotsList = document.querySelector('.dots')
+            if (!started) {
+                let dotStyle = document.createElement('div')
+                dotStyle.setAttribute('id', 'dot');
+                dotStyle.classList.add('pulle');
+                dotStyle.classList.add('dotactive');
+
+                dotsList.append(dotStyle)
+                return started = true
+            }
+            let dotStyle = document.createElement('div')
+            dotStyle.setAttribute('id', 'dot');
+            dotStyle.classList.add('pulle');
+
+            dotsList.append(dotStyle)
+        })
+    </script>
+    <script src="source/script/carouselscript.js"></script>
+    <script src="source/script/carousel1.js"></script>
+
+</body>
+
+</html>
