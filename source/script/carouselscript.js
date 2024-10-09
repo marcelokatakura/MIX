@@ -15,11 +15,12 @@ function moveSlide(step) {
     } else if (currentSlide > totalSlides - visibleSlides) {
         currentSlide = 0; // Move to the beginning of the slides
     }
+    // Define a visibilidade do botão no ultimo slide
     const pvbuton = document.querySelector('.prev-btn')
     const nxbuton = document.querySelector('.next-btn')
     if (visibleSlides < 8) {
         nxbuton.style.display = "none";}
-
+    // Define a visibilidade do botão para verdadeira
     pvbuton.addEventListener('click', function(){
         nxbuton.style.display = "inline";
     })
@@ -49,11 +50,12 @@ function moveSlide1(step) {
         currentSlide = 0; // Move to the beginning of the slides
     }
 
+    // Define a visibilidade do botão no ultimo slide
     const pvbuton = document.querySelector('.prev-btn1')
-    const nxbuton = document.querySelector('.next-btn1')
+    const nxbuton = document.querySelector('.next-btn1/')
     if (visibleSlides < 8) {
         nxbuton.style.display = "none";}
-
+    // Define a visibilidade do botão para verdadeira
     pvbuton.addEventListener('click', function(){
         nxbuton.style.display = "inline";
     })
