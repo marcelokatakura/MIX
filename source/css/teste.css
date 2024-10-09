@@ -1,6 +1,6 @@
 .carousel-container {
     margin-left: 54px;
-    width: 91%;
+    width: 100%;
     max-width: 1455px;
     overflow: hidden;
 }
@@ -11,13 +11,13 @@
 }   
 
 .carousel-slide img {
-    width: 22.33%;
+    width: 12.33%;
     
 }
 
 .prev-btn, .next-btn {
     position: absolute;
-    top: 123%;
+    top: 112%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -29,17 +29,18 @@
 }
 
 .prev-btn {
-    left: 10px;
+    left: 30px;
     display: none;
 }
 
 .next-btn {
     right: 10px;
+    display: block;
 }
 
 .carousel-container1 {
     margin-left: 54px;
-    width: 91%;
+    width: 100%;
     max-width: 1455px;
     overflow: hidden;
 }
@@ -50,13 +51,13 @@
 }
 
 .carousel-slide1 img {
-    width: 22.33%;
+    width: 12.33%;
     
 }
 
 .prev-btn1, .next-btn1 {
     position: absolute;
-    top: 123%;
+    top: 85%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
