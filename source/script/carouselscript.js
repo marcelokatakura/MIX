@@ -49,6 +49,15 @@ function moveSlide1(step) {
         currentSlide = 0; // Move to the beginning of the slides
     }
 
+    const pvbuton = document.querySelector('.prev-btn1')
+    const nxbuton = document.querySelector('.next-btn1')
+    if (visibleSlides < 8) {
+        nxbuton.style.display = "none";}
+
+    pvbuton.addEventListener('click', function(){
+        nxbuton.style.display = "inline";
+    })
+
     // Update slide container position
     document.querySelector('.carousel-slide1').style.transform = `translateX(${-slideWidth * currentSlide}px)`;
 
