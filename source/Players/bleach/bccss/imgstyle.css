@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+.overlay {
+    -webkit-box-shadow: inset 0px -145px 99px -50px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -145px 99px -50px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -138px 80px 40px rgba(0,0,0,1.75);
+    position:absolute;
+    background: #00000024;
+    height: min(56.25vw, 87vh);
+    width: 100%;
+    top: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .controls {
+        bottom: 10px;
+    }
+}
+
+

@@ -11,8 +11,9 @@
 }   
 
 .carousel-slide img {
-    width: 12.33%;
-    
+    width: 179px;
+    height: 240px;
+    object-fit: cover; /* Mantém o conteúdo da imagem ajustado à nova dimensão */
 }
 
 .prev-btn, .next-btn {
@@ -57,7 +58,7 @@
 
 .prev-btn1, .next-btn1 {
     position: absolute;
-    top: 85%;
+    top: 90%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
