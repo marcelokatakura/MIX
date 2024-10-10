@@ -51,13 +51,13 @@ function moveSlide1(step) {
     }
 
     // Define a visibilidade do botão no ultimo slide
-    const pvbuton = document.querySelector('.prev-btn1')
-    const nxbuton = document.querySelector('.next-btn1/')
+    const pvbuton1 = document.querySelector('.prev-btn1')
+    const nxbuton1 = document.querySelector('.next-btn1')
     if (visibleSlides < 8) {
-        nxbuton.style.display = "none";}
+        nxbuton1.style.display = "none";}
     // Define a visibilidade do botão para verdadeira
-    pvbuton.addEventListener('click', function(){
-        nxbuton.style.display = "inline";
+    pvbuton1.addEventListener('click', function(){
+        nxbuton1.style.display = "inline";
     })
 
     // Update slide container position
