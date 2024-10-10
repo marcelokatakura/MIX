@@ -12,13 +12,11 @@ function moveSlide(step) {
     // Handle loop back to the beginning or end of slides
     if (currentSlide < 0) {
         currentSlide = totalSlides - visibleSlides; // Move to the last visible slides
-    } else if (currentSlide > totalSlides - visibleSlides) {
-        currentSlide = 0; // Move to the beginning of the slides
     }
     // Define a visibilidade do botão no ultimo slide
     const pvbuton = document.querySelector('.prev-btn')
     const nxbuton = document.querySelector('.next-btn')
-    if (visibleSlides < 8) {
+    if (currentSlide > totalSlides - visibleSlides) {
         nxbuton.style.display = "none";}
     // Define a visibilidade do botão para verdadeira
     pvbuton.addEventListener('click', function(){
@@ -46,14 +44,12 @@ function moveSlide1(step) {
     // Handle loop back to the beginning or end of slides
     if (currentSlide < 0) {
         currentSlide = totalSlides - visibleSlides; // Move to the last visible slides
-    } else if (currentSlide > totalSlides - visibleSlides) {
-        currentSlide = 0; // Move to the beginning of the slides
     }
 
     // Define a visibilidade do botão no ultimo slide
     const pvbuton1 = document.querySelector('.prev-btn1')
     const nxbuton1 = document.querySelector('.next-btn1')
-    if (visibleSlides < 8) {
+    if (currentSlide > totalSlides - visibleSlides) {
         nxbuton1.style.display = "none";}
     // Define a visibilidade do botão para verdadeira
     pvbuton1.addEventListener('click', function(){
@@ -78,12 +74,3 @@ window.onload = () => {
     // Initialize button visibility
     document.querySelector('.prev-btn').style.display = 'none'; // Initially hide the "prev" button
 };
-
-
-
-
-
-
-
-
-
