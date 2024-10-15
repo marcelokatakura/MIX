@@ -114,3 +114,26 @@ header {
 
 }
 
+#menulog {
+    top:45%;
+    position: absolute;
+    height: 26vh;
+    margin-left: 60px;
+}
+
+#age {
+    border-radius: 5px;
+    border: 2px solid #000;
+    height: 3%;
+    margin-left: 66px;
+    margin-top: -5%;
+    position: absolute;
+}
+
+#menutemp {
+    margin-left: 6.2%;
+    top: 72.9%;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+}
